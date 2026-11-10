@@ -1,0 +1,448 @@
+{
+  "cases": {
+    "Hal/Natural": {
+      "sections": [
+        {
+          "index": 0,
+          "ok": true,
+          "similarity": 1.0,
+          "coverage": 1.0,
+          "head_ok": true,
+          "tail_ok": true,
+          "attempts": 1,
+          "worker_verified": true
+        },
+        {
+          "index": 1,
+          "ok": true,
+          "similarity": 1.0,
+          "coverage": 1.0,
+          "head_ok": true,
+          "tail_ok": true,
+          "attempts": 1,
+          "worker_verified": true
+        },
+        {
+          "index": 2,
+          "ok": true,
+          "similarity": 0.9394,
+          "coverage": 0.9394,
+          "head_ok": true,
+          "tail_ok": true,
+          "attempts": 1,
+          "worker_verified": true
+        }
+      ],
+      "full": {
+        "ok": true,
+        "similarity": 0.9796,
+        "coverage": 0.9796,
+        "head_ok": true,
+        "tail_ok": true,
+        "missing_at_start": 0,
+        "missing_at_end": 1,
+        "expected_words": 98,
+        "heard_words": 98,
+        "missing": [
+          "notice",
+          "once"
+        ]
+      },
+      "style": "Natural",
+      "voice": "Hal",
+      "sections_count": 3,
+      "seconds": 27.7,
+      "peak_memory_gb": 3.991,
+      "retried": [
+        1,
+        1,
+        1
+      ],
+      "wall_seconds": 47.7,
+      "session_id": "14b1654e9ba14154ae4ce58aa6c55499"
+    },
+    "Hal/Energetic": {
+      "sections": [
+        {
+          "index": 0,
+          "ok": true,
+          "similarity": 1.0,
+          "coverage": 1.0,
+          "head_ok": true,
+          "tail_ok": true,
+          "attempts": 1,
+          "worker_verified": true
+        },
+        {
+          "index": 1,
+          "ok": true,
+          "similarity": 0.9688,
+          "coverage": 0.9688,
+          "head_ok": true,
+          "tail_ok": true,
+          "attempts": 1,
+          "worker_verified": true
+        },
+        {
+          "index": 2,
+          "ok": true,
+          "similarity": 0.9697,
+          "coverage": 0.9697,
+          "head_ok": true,
+          "tail_ok": true,
+          "attempts": 1,
+          "worker_verified": true
+        }
+      ],
+      "full": {
+        "ok": true,
+        "similarity": 0.9898,
+        "coverage": 0.9898,
+        "head_ok": true,
+        "tail_ok": true,
+        "missing_at_start": 0,
+        "missing_at_end": 0,
+        "expected_words": 98,
+        "heard_words": 98,
+        "missing": [
+          "notice"
+        ]
+      },
+      "style": "Energetic Explainer",
+      "voice": "Hal",
+      "sections_count": 3,
+      "seconds": 24.91,
+      "peak_memory_gb": 3.989,
+      "retried": [
+        1,
+        1,
+        1
+      ],
+      "wall_seconds": 45.7,
+      "session_id": "30a839cc4696438c92d3acc3b40ce86a"
+    },
+    "Mike/Natural": {
+      "sections": [
+        {
+          "index": 0,
+          "ok": true,
+          "similarity": 1.0,
+          "coverage": 1.0,
+          "head_ok": true,
+          "tail_ok": true,
+          "attempts": 1,
+          "worker_verified": true
+        },
+        {
+          "index": 1,
+          "ok": true,
+          "similarity": 1.0,
+          "coverage": 1.0,
+          "head_ok": true,
+          "tail_ok": true,
+          "attempts": 1,
+          "worker_verified": true
+        },
+        {
+          "index": 2,
+          "ok": true,
+          "similarity": 0.9697,
+          "coverage": 0.9697,
+          "head_ok": true,
+          "tail_ok": true,
+          "attempts": 1,
+          "worker_verified": true
+        }
+      ],
+      "full": {
+        "ok": true,
+        "similarity": 0.9898,
+        "coverage": 0.9898,
+        "head_ok": true,
+        "tail_ok": true,
+        "missing_at_start": 0,
+        "missing_at_end": 0,
+        "expected_words": 98,
+        "heard_words": 98,
+        "missing": [
+          "notice"
+        ]
+      },
+      "style": "Natural",
+      "voice": "Mike",
+      "sections_count": 3,
+      "seconds": 28.14,
+      "peak_memory_gb": 3.989,
+      "retried": [
+        1,
+        1,
+        1
+      ],
+      "wall_seconds": 42.6,
+      "session_id": "86938eeadc2948d18722887319bdf580"
+    },
+    "Mike/Energetic": {
+      "sections": [
+        {
+          "index": 0,
+          "ok": true,
+          "similarity": 1.0,
+          "coverage": 1.0,
+          "head_ok": true,
+          "tail_ok": true,
+          "attempts": 1,
+          "worker_verified": true
+        },
+        {
+          "index": 1,
+          "ok": true,
+          "similarity": 1.0,
+          "coverage": 1.0,
+          "head_ok": true,
+          "tail_ok": true,
+          "attempts": 1,
+          "worker_verified": true
+        },
+        {
+          "index": 2,
+          "ok": true,
+          "similarity": 0.9697,
+          "coverage": 0.9697,
+          "head_ok": true,
+          "tail_ok": true,
+          "attempts": 1,
+          "worker_verified": true
+        }
+      ],
+      "full": {
+        "ok": true,
+        "similarity": 0.9898,
+        "coverage": 0.9898,
+        "head_ok": true,
+        "tail_ok": true,
+        "missing_at_start": 0,
+        "missing_at_end": 0,
+        "expected_words": 98,
+        "heard_words": 98,
+        "missing": [
+          "notice"
+        ]
+      },
+      "style": "Energetic Explainer",
+      "voice": "Mike",
+      "sections_count": 3,
+      "seconds": 23.19,
+      "peak_memory_gb": 3.988,
+      "retried": [
+        1,
+        1,
+        1
+      ],
+      "wall_seconds": 63.6,
+      "session_id": "c9b89b7c57e14daca52e1f285cdfc28d"
+    },
+    "Hal/tiny": {
+      "sections": [
+        {
+          "index": 0,
+          "ok": true,
+          "similarity": 1.0,
+          "coverage": 1.0,
+          "head_ok": true,
+          "tail_ok": true,
+          "attempts": 1,
+          "worker_verified": true
+        }
+      ],
+      "full": {
+        "ok": true,
+        "similarity": 1.0,
+        "coverage": 1.0,
+        "head_ok": true,
+        "tail_ok": true,
+        "missing_at_start": 0,
+        "missing_at_end": 0,
+        "expected_words": 3,
+        "heard_words": 3,
+        "missing": []
+      }
+    },
+    "Mike/tiny": {
+      "sections": [
+        {
+          "index": 0,
+          "ok": true,
+          "similarity": 1.0,
+          "coverage": 1.0,
+          "head_ok": true,
+          "tail_ok": true,
+          "attempts": 1,
+          "worker_verified": true
+        }
+      ],
+      "full": {
+        "ok": true,
+        "similarity": 1.0,
+        "coverage": 1.0,
+        "head_ok": true,
+        "tail_ok": true,
+        "missing_at_start": 0,
+        "missing_at_end": 0,
+        "expected_words": 3,
+        "heard_words": 3,
+        "missing": []
+      }
+    },
+    "Mike/edges": {
+      "sections": [
+        {
+          "index": 0,
+          "ok": true,
+          "similarity": 1.0,
+          "coverage": 1.0,
+          "head_ok": true,
+          "tail_ok": true,
+          "attempts": 1,
+          "worker_verified": true
+        },
+        {
+          "index": 1,
+          "ok": true,
+          "similarity": 1.0,
+          "coverage": 1.0,
+          "head_ok": true,
+          "tail_ok": true,
+          "attempts": 1,
+          "worker_verified": true
+        }
+      ],
+      "full": {
+        "ok": true,
+        "similarity": 1.0,
+        "coverage": 1.0,
+        "head_ok": true,
+        "tail_ok": true,
+        "missing_at_start": 0,
+        "missing_at_end": 0,
+        "expected_words": 31,
+        "heard_words": 31,
+        "missing": []
+      }
+    },
+    "resume": {
+      "sections": [
+        {
+          "index": 0,
+          "ok": true,
+          "similarity": 1.0,
+          "coverage": 1.0,
+          "head_ok": true,
+          "tail_ok": true,
+          "attempts": 1,
+          "worker_verified": true
+        },
+        {
+          "index": 1,
+          "ok": true,
+          "similarity": 1.0,
+          "coverage": 1.0,
+          "head_ok": true,
+          "tail_ok": true,
+          "attempts": 1,
+          "worker_verified": true
+        },
+        {
+          "index": 2,
+          "ok": true,
+          "similarity": 0.9697,
+          "coverage": 0.9697,
+          "head_ok": true,
+          "tail_ok": true,
+          "attempts": 1,
+          "worker_verified": true
+        }
+      ],
+      "full": {
+        "ok": true,
+        "similarity": 0.9898,
+        "coverage": 0.9898,
+        "head_ok": true,
+        "tail_ok": true,
+        "missing_at_start": 0,
+        "missing_at_end": 0,
+        "expected_words": 98,
+        "heard_words": 98,
+        "missing": [
+          "notice"
+        ]
+      }
+    },
+    "regenerated": {
+      "sections": [
+        {
+          "index": 0,
+          "ok": true,
+          "similarity": 1.0,
+          "coverage": 1.0,
+          "head_ok": true,
+          "tail_ok": true,
+          "attempts": 1,
+          "worker_verified": true
+        },
+        {
+          "index": 1,
+          "ok": true,
+          "similarity": 1.0,
+          "coverage": 1.0,
+          "head_ok": true,
+          "tail_ok": true,
+          "attempts": 1,
+          "worker_verified": true
+        },
+        {
+          "index": 2,
+          "ok": true,
+          "similarity": 0.9697,
+          "coverage": 0.9697,
+          "head_ok": true,
+          "tail_ok": true,
+          "attempts": 1,
+          "worker_verified": true
+        }
+      ],
+      "full": {
+        "ok": true,
+        "similarity": 0.9898,
+        "coverage": 0.9898,
+        "head_ok": true,
+        "tail_ok": true,
+        "missing_at_start": 0,
+        "missing_at_end": 0,
+        "expected_words": 98,
+        "heard_words": 98,
+        "missing": [
+          "notice"
+        ]
+      }
+    }
+  },
+  "exports": {
+    "wav": {
+      "file": "samples/completeness-demo.wav",
+      "ok": true,
+      "coverage": 0.9898,
+      "head_ok": true,
+      "tail_ok": true
+    },
+    "mp3": {
+      "file": "samples/completeness-demo.mp3",
+      "ok": true,
+      "coverage": 0.9898,
+      "head_ok": true,
+      "tail_ok": true
+    }
+  },
+  "failures": [],
+  "wall_seconds": 488.1,
+  "peak_memory_gb": 3.991
+}

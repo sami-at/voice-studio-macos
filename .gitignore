@@ -1,0 +1,15 @@
+.venv/
+.setup-cache/
+.setup-wheels/
+models/
+local_data/
+dist/
+__pycache__/
+.pytest_cache/
+*.pyc
+.DS_Store
+docs/*.log
+samples/
+backups/
+.env
+Voice Studio.app/

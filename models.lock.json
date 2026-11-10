@@ -1,0 +1,12 @@
+{
+  "tts": {
+    "repo": "mlx-community/Qwen3-TTS-12Hz-0.6B-Base-8bit",
+    "revision": "50f45ef0047cde7e84c2ef04326acb8ada2436a7",
+    "directory": "qwen3-tts-0.6b-8bit"
+  },
+  "stt": {
+    "repo": "mlx-community/whisper-base-mlx",
+    "revision": "1e3e249fb8d01c655324bd6841b1deadffd6d04c",
+    "directory": "whisper-base"
+  }
+}

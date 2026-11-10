@@ -1,0 +1,85 @@
+{
+  "qwen3": {
+    "pause": {
+      "requested": 0.8,
+      "gap_plain": 0.111,
+      "gap_paused": 0.771,
+      "added": 0.66,
+      "seconds_plain": 2.7,
+      "seconds_paused": 3.36,
+      "heard": "But wait, there's actually a scientific reason.",
+      "complete": true,
+      "coverage": 1.0
+    },
+    "override": {
+      "script": "Flies taste with their {tarsi|tar sigh}, which is how they find food.",
+      "spoken": "Flies taste with their tar sigh, which is how they find food.",
+      "heard": "Flies taste with their tar sigh, which is how they find food.",
+      "stored_spoken": "Flies taste with their tar sigh, which is how they find food.",
+      "reached_engine": true,
+      "display_preserved": true
+    },
+    "stale": {
+      "went_stale": true,
+      "takes_before": 1,
+      "takes_after": 1
+    }
+  },
+  "chatterbox": {
+    "pause": {
+      "requested": 0.8,
+      "gap_plain": 0.102,
+      "gap_paused": 0.782,
+      "added": 0.68,
+      "seconds_plain": 2.51,
+      "seconds_paused": 3.19,
+      "heard": "But wait, there is actually a scientific reason.",
+      "complete": true,
+      "coverage": 1.0
+    },
+    "override": {
+      "script": "Flies taste with their {tarsi|tar sigh}, which is how they find food.",
+      "spoken": "Flies taste with their tar sigh, which is how they find food.",
+      "heard": "flies taste with their tar sseye, which is how they find food.",
+      "stored_spoken": "Flies taste with their tar sigh, which is how they find food.",
+      "reached_engine": true,
+      "display_preserved": true
+    },
+    "stale": {
+      "went_stale": true,
+      "takes_before": 1,
+      "takes_after": 1
+    }
+  },
+  "standalone": {
+    "qwen3": {
+      "sections": 2,
+      "gap": 0.364,
+      "lead_pause": 0.4,
+      "complete": true,
+      "coverage": 1.0,
+      "seconds": 3.62
+    },
+    "chatterbox": {
+      "sections": 2,
+      "gap": 0.4,
+      "lead_pause": 0.4,
+      "complete": true,
+      "coverage": 1.0,
+      "seconds": 3.85
+    }
+  },
+  "exports": {
+    "wav": {
+      "complete": true,
+      "coverage": 1.0,
+      "gap": 0.595
+    },
+    "mp3": {
+      "complete": true,
+      "coverage": 1.0,
+      "gap": 0.595
+    }
+  },
+  "failures": []
+}

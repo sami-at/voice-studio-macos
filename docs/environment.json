@@ -1,0 +1,29 @@
+{
+  "macos": "26.6.2",
+  "architecture": "arm64",
+  "python": "3.11.17",
+  "python_executable": "<project>/.venv/bin/python",
+  "disk_free_gib": 26.71,
+  "packages": {
+    "PySide6": "6.8.3",
+    "mlx": "0.32.4",
+    "mlx-audio": "0.5.9",
+    "mlx-whisper": "0.4.3",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "torch": "2.14.1",
+    "imageio-ffmpeg": "0.6.0"
+  },
+  "metal_available": true,
+  "metal_device": {
+    "device_name": "Apple M1",
+    "max_recommended_working_set_size": 5726633984,
+    "memory_size": 8589934592,
+    "architecture": "applegpu_g13g",
+    "max_buffer_length": 4294967296,
+    "resource_limit": 499000
+  },
+  "metal_matrix_result": 64.0,
+  "ffmpeg": "<project>/.venv/lib/python3.11/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1",
+  "ffmpeg_version": "ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers"
+}

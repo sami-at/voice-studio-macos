@@ -1,0 +1,7 @@
+# Tested direct dependencies. Install requirements.lock.txt for the exact environment.
+PySide6==6.8.3
+mlx-audio==0.5.9
+mlx-whisper==0.4.3
+imageio-ffmpeg==0.6.0
+soundfile==0.13.1
+pytest==8.3.5

@@ -1,0 +1,78 @@
+{
+  "chatterbox_1-question": {
+    "measured_lufs": -20.1,
+    "gain_db": 0.1
+  },
+  "chatterbox_2-surprise": {
+    "measured_lufs": -20.1,
+    "gain_db": 0.1
+  },
+  "chatterbox_3-explain": {
+    "measured_lufs": -21.3,
+    "gain_db": 1.3
+  },
+  "chatterbox_4-emphasis": {
+    "measured_lufs": -19.8,
+    "gain_db": -0.2
+  },
+  "chatterbox_5-conclusion": {
+    "measured_lufs": -20.8,
+    "gain_db": 0.8
+  },
+  "chatterbox_exag100_s11": {
+    "measured_lufs": -20.6,
+    "gain_db": 0.6
+  },
+  "chatterbox_exag100_s22": {
+    "measured_lufs": -19.5,
+    "gain_db": -0.5
+  },
+  "chatterbox_exag100_s33": {
+    "measured_lufs": -19.5,
+    "gain_db": -0.5
+  },
+  "chatterbox_exag25_s11": {
+    "measured_lufs": -19.6,
+    "gain_db": -0.4
+  },
+  "chatterbox_exag25_s22": {
+    "measured_lufs": -19.7,
+    "gain_db": -0.3
+  },
+  "chatterbox_exag25_s33": {
+    "measured_lufs": -19.6,
+    "gain_db": -0.4
+  },
+  "chatterbox_exag60_s11": {
+    "measured_lufs": -19.1,
+    "gain_db": -0.9
+  },
+  "chatterbox_exag60_s22": {
+    "measured_lufs": -20.4,
+    "gain_db": 0.4
+  },
+  "chatterbox_exag60_s33": {
+    "measured_lufs": -19.7,
+    "gain_db": -0.3
+  },
+  "current_1-question": {
+    "measured_lufs": -18.7,
+    "gain_db": -1.3
+  },
+  "current_2-surprise": {
+    "measured_lufs": -19.5,
+    "gain_db": -0.5
+  },
+  "current_3-explain": {
+    "measured_lufs": -21.1,
+    "gain_db": 1.1
+  },
+  "current_4-emphasis": {
+    "measured_lufs": -18.5,
+    "gain_db": -1.5
+  },
+  "current_5-conclusion": {
+    "measured_lufs": -20.3,
+    "gain_db": 0.3
+  }
+}

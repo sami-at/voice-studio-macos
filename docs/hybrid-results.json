@@ -1,0 +1,25 @@
+{
+  "mixed": {
+    "engines": [
+      "qwen3",
+      "chatterbox",
+      "qwen3"
+    ],
+    "seconds": 12.21,
+    "coverage": 1.0,
+    "complete": true
+  },
+  "exports": {
+    "wav": {
+      "complete": true,
+      "coverage": 1.0
+    },
+    "mp3": {
+      "complete": true,
+      "coverage": 1.0
+    }
+  },
+  "peak_memory_gb": 4.717,
+  "failures": [],
+  "session_id": "4659927825954c21ba3555df6a9e7c9d"
+}

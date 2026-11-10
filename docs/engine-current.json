@@ -1,0 +1,45 @@
+{
+  "engine": "current",
+  "load_seconds": 8.2,
+  "peak_memory_gb": 3.843,
+  "total_audio_seconds": 20.88,
+  "total_generation_seconds": 29.1,
+  "overall_realtime_factor": 1.39,
+  "lines": [
+    {
+      "tag": "1-question",
+      "seconds": 3.04,
+      "gen_seconds": 3.5,
+      "realtime_factor": 1.1,
+      "file": "<project>/samples/engines/current_1-question.wav"
+    },
+    {
+      "tag": "2-surprise",
+      "seconds": 4.4,
+      "gen_seconds": 4.6,
+      "realtime_factor": 1.1,
+      "file": "<project>/samples/engines/current_2-surprise.wav"
+    },
+    {
+      "tag": "3-explain",
+      "seconds": 4.32,
+      "gen_seconds": 7.8,
+      "realtime_factor": 1.8,
+      "file": "<project>/samples/engines/current_3-explain.wav"
+    },
+    {
+      "tag": "4-emphasis",
+      "seconds": 4.16,
+      "gen_seconds": 8.8,
+      "realtime_factor": 2.1,
+      "file": "<project>/samples/engines/current_4-emphasis.wav"
+    },
+    {
+      "tag": "5-conclusion",
+      "seconds": 4.96,
+      "gen_seconds": 4.4,
+      "realtime_factor": 0.9,
+      "file": "<project>/samples/engines/current_5-conclusion.wav"
+    }
+  ]
+}

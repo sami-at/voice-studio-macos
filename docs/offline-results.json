@@ -1,0 +1,11 @@
+{
+  "sandbox_blocks_network": true,
+  "session_id": "164b334044194cdbb736d14930922c7b",
+  "output": "local_data/sessions/164b334044194cdbb736d14930922c7b/narration-6b19cbc0.wav",
+  "seconds": 4.7,
+  "sample_rate": 24000,
+  "device": "Apple Metal (MLX)",
+  "peak_memory_gb": 3.805,
+  "generation_seconds": 5.2,
+  "wall_seconds": 13.29
+}

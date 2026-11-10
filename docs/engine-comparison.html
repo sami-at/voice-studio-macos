@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Engine Listening Test</title>
+<style>
+  :root {
+    --bg:#15171b; --panel:#1c2026; --line:#303640; --text:#e5e8ed; --muted:#99a4b4;
+    --accent:#b6d8cf; --a:#8fb6d8; --b:#d8bb8f; --radius:12px;
+  }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) {
+      --bg:#f6f7f9; --panel:#ffffff; --line:#dfe3e9; --text:#1a1d22; --muted:#5c6673;
+      --accent:#2f6f60; --a:#2d5f85; --b:#8a5f1c;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg:#15171b; --panel:#1c2026; --line:#303640; --text:#e5e8ed; --muted:#99a4b4;
+    --accent:#b6d8cf; --a:#8fb6d8; --b:#d8bb8f;
+  }
+  * { box-sizing:border-box; }
+  body {
+    margin:0; background:var(--bg); color:var(--text);
+    font:15px/1.6 -apple-system, "SF Pro Text", "Helvetica Neue", sans-serif;
+  }
+  .wrap { max-width:1080px; margin:0 auto; padding:40px 16px 80px; }
+  h1 { font-size:27px; letter-spacing:-.6px; margin:0 0 6px; }
+  h2 { font-size:19px; margin:44px 0 14px; padding-bottom:9px; border-bottom:1px solid var(--line); }
+  h3 { font-size:15px; margin:0 0 4px; color:var(--accent); }
+  p.sub { color:var(--muted); margin:0 0 4px; }
+  .note {
+    background:var(--panel); border:1px solid var(--line); border-radius:var(--radius);
+    padding:16px 18px; margin:22px 0;
+  }
+  .note p { margin:0 0 8px; }
+  .note p:last-child { margin:0; }
+  ul.listen { margin:10px 0 0; padding-left:20px; color:var(--muted); }
+  ul.listen li { margin-bottom:5px; }
+  ul.listen b { color:var(--text); font-weight:600; }
+  .pair {
+    background:var(--panel); border:1px solid var(--line); border-radius:var(--radius);
+    padding:18px; margin-bottom:16px;
+  }
+  .line { color:var(--muted); font-style:italic; margin:0 0 14px; }
+  .ab { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  @media (max-width:720px) { .ab { grid-template-columns:1fr; } }
+  .side { border:1px solid var(--line); border-radius:9px; padding:12px; }
+  .tag { font-size:11px; font-weight:700; letter-spacing:.8px; text-transform:uppercase; }
+  .tag-a { color:var(--a); } .tag-b { color:var(--b); } .tag-muted { color:var(--muted); }
+  .meta { color:var(--muted); font-size:12px; margin:3px 0 10px; }
+  audio { width:100%; }
+  .controls { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-top:14px; }
+  button {
+    background:transparent; color:var(--text); border:1px solid var(--line);
+    border-radius:7px; padding:7px 13px; font:inherit; font-size:13px; cursor:pointer;
+  }
+  button:hover { border-color:var(--accent); color:var(--accent); }
+  button.on { background:var(--accent); color:var(--bg); border-color:var(--accent); }
+  .verdict { display:flex; flex-wrap:wrap; gap:12px; margin-left:auto; font-size:13px; color:var(--muted); }
+  .verdict label { cursor:pointer; }
+  .grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+  @media (max-width:720px) { .grid3 { grid-template-columns:1fr; } }
+  .seeds { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; }
+  @media (max-width:720px) { .seeds { grid-template-columns:1fr; } }
+  .seed { border:1px solid var(--line); border-radius:9px; padding:10px; }
+  footer { color:var(--muted); font-size:13px; margin-top:46px;
+            border-top:1px solid var(--line); padding-top:16px; }
+  code { background:rgba(127,127,127,.14); padding:1px 5px; border-radius:4px; font-size:12.5px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Which engine narrates better?</h1>
+  <p class="sub">Same script, same voice (Mike), level-matched. Your ears decide this one.</p>
+
+  <div class="note">
+    <p><b>Every clip is matched to the same loudness</b> (-20 LUFS) with a single
+    constant gain. Nothing else was altered — no compression, no pitch or timing change. The
+    original recordings are untouched in <code>samples/engines/</code>.</p>
+    <p>The measurements said Chatterbox is <b>6.5&times; slower</b> (a 45-second narration takes
+    about 7 minutes instead of 31 seconds) and that its expressiveness control did not behave
+    consistently. Measurements cannot judge naturalness, so ignore all of that until you have
+    listened.</p>
+  </div>
+
+  <h2>What to listen for</h2>
+  <div class="note">
+    <ul class="listen">
+      <li><b>Naturalness</b> — does it sound like a person explaining, or a machine reading?</li>
+      <li><b>Emotional expression</b> — is there genuine interest, or flat recitation?</li>
+      <li><b>Intonation</b> — does pitch move with the meaning? Does the question rise?</li>
+      <li><b>Emphasis</b> — in sample 4, does &ldquo;absolutely no idea&rdquo; stand out?</li>
+      <li><b>Sentence endings</b> — does &ldquo;The mystery is over&rdquo; feel finished, or cut off?</li>
+      <li><b>Pacing</b> — are the pauses where a person would put them?</li>
+      <li><b>Voice consistency</b> — does it stay recognisably Mike throughout?</li>
+      <li><b>Clarity</b> — any slurred, dropped or mispronounced words?</li>
+    </ul>
+  </div>
+
+  <h2>A / B comparison &mdash; same script, both engines</h2>
+  
+      <section class="pair" data-pair="1-question">
+        <header>
+          <h3>A curious question</h3>
+          <p class="line">&ldquo;Have you ever wondered why flies rub their hands together?&rdquo;</p>
+        </header>
+        <div class="ab">
+          <article class="side">
+            <div class="tag tag-a">A &middot; Current engine</div>
+            <p class="meta">Qwen3-TTS 0.6B 8-bit &middot; voice: Mike</p>
+            <audio preload="none" controls src="../samples/engines/level-matched/current_1-question.mp3"></audio>
+          </article>
+          <article class="side">
+            <div class="tag tag-b">B &middot; Chatterbox</div>
+            <p class="meta">multilingual v3 &middot; exaggeration 0.60 &middot; voice: Mike</p>
+            <audio preload="none" controls src="../samples/engines/level-matched/chatterbox_1-question.mp3"></audio>
+          </article>
+        </div>
+        <div class="controls">
+          <button data-play="A">Play A</button>
+          <button data-play="B">Play B</button>
+          <button data-play="AB">A then B</button>
+          <button data-play="stop">Stop</button>
+          <span class="verdict">
+            <label><input type="radio" name="v-1-question" value="A"> A sounds better</label>
+            <label><input type="radio" name="v-1-question" value="B"> B sounds better</label>
+            <label><input type="radio" name="v-1-question" value="="> No real difference</label>
+          </span>
+        </div>
+      </section>
+
+      <section class="pair" data-pair="2-surprise">
+        <header>
+          <h3>A surprising fact</h3>
+          <p class="line">&ldquo;Surprisingly, they are not plotting anything. They are cleaning themselves.&rdquo;</p>
+        </header>
+        <div class="ab">
+          <article class="side">
+            <div class="tag tag-a">A &middot; Current engine</div>
+            <p class="meta">Qwen3-TTS 0.6B 8-bit &middot; voice: Mike</p>
+            <audio preload="none" controls src="../samples/engines/level-matched/current_2-surprise.mp3"></audio>
+          </article>
+          <article class="side">
+            <div class="tag tag-b">B &middot; Chatterbox</div>
+            <p class="meta">multilingual v3 &middot; exaggeration 0.60 &middot; voice: Mike</p>
+            <audio preload="none" controls src="../samples/engines/level-matched/chatterbox_2-surprise.mp3"></audio>
+          </article>
+        </div>
+        <div class="controls">
+          <button data-play="A">Play A</button>
+          <button data-play="B">Play B</button>
+          <button data-play="AB">A then B</button>
+          <button data-play="stop">Stop</button>
+          <span class="verdict">
+            <label><input type="radio" name="v-2-surprise" value="A"> A sounds better</label>
+            <label><input type="radio" name="v-2-surprise" value="B"> B sounds better</label>
+            <label><input type="radio" name="v-2-surprise" value="="> No real difference</label>
+          </span>
+        </div>
+      </section>
+
+      <section class="pair" data-pair="3-explain">
+        <header>
+          <h3>A conversational explanation</h3>
+          <p class="line">&ldquo;Flies taste with their feet, so keeping them clean is how they find food.&rdquo;</p>
+        </header>
+        <div class="ab">
+          <article class="side">
+            <div class="tag tag-a">A &middot; Current engine</div>
+            <p class="meta">Qwen3-TTS 0.6B 8-bit &middot; voice: Mike</p>
+            <audio preload="none" controls src="../samples/engines/level-matched/current_3-explain.mp3"></audio>
+          </article>
+          <article class="side">
+            <div class="tag tag-b">B &middot; Chatterbox</div>
+            <p class="meta">multilingual v3 &middot; exaggeration 0.60 &middot; voice: Mike</p>
+            <audio preload="none" controls src="../samples/engines/level-matched/chatterbox_3-explain.mp3"></audio>
+          </article>
+        </div>
+        <div class="controls">
+          <button data-play="A">Play A</button>
+          <button data-play="B">Play B</button>
+          <button data-play="AB">A then B</button>
+          <button data-play="stop">Stop</button>
+          <span class="verdict">
+            <label><input type="radio" name="v-3-explain" value="A"> A sounds better</label>
+            <label><input type="radio" name="v-3-explain" value="B"> B sounds better</label>
+            <label><input type="radio" name="v-3-explain" value="="> No real difference</label>
+          </span>
+        </div>
+      </section>
+
+      <section class="pair" data-pair="4-emphasis">
+        <header>
+          <h3>A line needing natural emphasis</h3>
+          <p class="line">&ldquo;You walk into a room and realise you have absolutely no idea why you are there.&rdquo;</p>
+        </header>
+        <div class="ab">
+          <article class="side">
+            <div class="tag tag-a">A &middot; Current engine</div>
+            <p class="meta">Qwen3-TTS 0.6B 8-bit &middot; voice: Mike</p>
+            <audio preload="none" controls src="../samples/engines/level-matched/current_4-emphasis.mp3"></audio>
+          </article>
+          <article class="side">
+            <div class="tag tag-b">B &middot; Chatterbox</div>
+            <p class="meta">multilingual v3 &middot; exaggeration 0.60 &middot; voice: Mike</p>
+            <audio preload="none" controls src="../samples/engines/level-matched/chatterbox_4-emphasis.mp3"></audio>
+          </article>
+        </div>
+        <div class="controls">
+          <button data-play="A">Play A</button>
+          <button data-play="B">Play B</button>
+          <button data-play="AB">A then B</button>
+          <button data-play="stop">Stop</button>
+          <span class="verdict">
+            <label><input type="radio" name="v-4-emphasis" value="A"> A sounds better</label>
+            <label><input type="radio" name="v-4-emphasis" value="B"> B sounds better</label>
+            <label><input type="radio" name="v-4-emphasis" value="="> No real difference</label>
+          </span>
+        </div>
+      </section>
+
+      <section class="pair" data-pair="5-conclusion">
+        <header>
+          <h3>A calm conclusion</h3>
+          <p class="line">&ldquo;So the next time you see it, you will know exactly what is going on. The mystery is over.&rdquo;</p>
+        </header>
+        <div class="ab">
+          <article class="side">
+            <div class="tag tag-a">A &middot; Current engine</div>
+            <p class="meta">Qwen3-TTS 0.6B 8-bit &middot; voice: Mike</p>
+            <audio preload="none" controls src="../samples/engines/level-matched/current_5-conclusion.mp3"></audio>
+          </article>
+          <article class="side">
+            <div class="tag tag-b">B &middot; Chatterbox</div>
+            <p class="meta">multilingual v3 &middot; exaggeration 0.60 &middot; voice: Mike</p>
+            <audio preload="none" controls src="../samples/engines/level-matched/chatterbox_5-conclusion.mp3"></audio>
+          </article>
+        </div>
+        <div class="controls">
+          <button data-play="A">Play A</button>
+          <button data-play="B">Play B</button>
+          <button data-play="AB">A then B</button>
+          <button data-play="stop">Stop</button>
+          <span class="verdict">
+            <label><input type="radio" name="v-5-conclusion" value="A"> A sounds better</label>
+            <label><input type="radio" name="v-5-conclusion" value="B"> B sounds better</label>
+            <label><input type="radio" name="v-5-conclusion" value="="> No real difference</label>
+          </span>
+        </div>
+      </section>
+
+  <h2>Does the expressiveness dial do anything?</h2>
+  <div class="note">
+    <p>Chatterbox alone, same sentence and seed, only <code>exaggeration</code> changes. If the
+    dial works, these should differ in a consistent direction. Measured pitch variation moved
+    the <i>wrong</i> way (4.85 &rarr; 4.16 semitones as the dial went up), so this is the claim
+    to test by ear.</p>
+  </div>
+  <div class="grid3">
+          <article class="side">
+            <div class="tag tag-b">Exaggeration 0.25</div>
+            <audio preload="none" controls src="../samples/engines/level-matched/chatterbox_exag25_s11.mp3"></audio>
+          </article>
+
+          <article class="side">
+            <div class="tag tag-b">Exaggeration 0.60</div>
+            <audio preload="none" controls src="../samples/engines/level-matched/chatterbox_exag60_s11.mp3"></audio>
+          </article>
+
+          <article class="side">
+            <div class="tag tag-b">Exaggeration 1.00</div>
+            <audio preload="none" controls src="../samples/engines/level-matched/chatterbox_exag100_s11.mp3"></audio>
+          </article></div>
+
+  <h2>Is it the dial, or just the seed?</h2>
+  <div class="note">
+    <p>The same three settings across three random seeds. If seeds at one setting differ as much
+    as the settings differ from each other, the dial is not really controlling anything.</p>
+  </div>
+  <div class="seeds">
+          <article class="seed">
+            <div class="tag tag-muted">Exaggeration 0.25 · seed 11</div>
+            <audio preload="none" controls src="../samples/engines/level-matched/chatterbox_exag25_s11.mp3"></audio>
+          </article>
+
+          <article class="seed">
+            <div class="tag tag-muted">Exaggeration 0.25 · seed 22</div>
+            <audio preload="none" controls src="../samples/engines/level-matched/chatterbox_exag25_s22.mp3"></audio>
+          </article>
+
+          <article class="seed">
+            <div class="tag tag-muted">Exaggeration 0.25 · seed 33</div>
+            <audio preload="none" controls src="../samples/engines/level-matched/chatterbox_exag25_s33.mp3"></audio>
+          </article>
+
+          <article class="seed">
+            <div class="tag tag-muted">Exaggeration 0.60 · seed 11</div>
+            <audio preload="none" controls src="../samples/engines/level-matched/chatterbox_exag60_s11.mp3"></audio>
+          </article>
+
+          <article class="seed">
+            <div class="tag tag-muted">Exaggeration 0.60 · seed 22</div>
+            <audio preload="none" controls src="../samples/engines/level-matched/chatterbox_exag60_s22.mp3"></audio>
+          </article>
+
+          <article class="seed">
+            <div class="tag tag-muted">Exaggeration 0.60 · seed 33</div>
+            <audio preload="none" controls src="../samples/engines/level-matched/chatterbox_exag60_s33.mp3"></audio>
+          </article>
+
+          <article class="seed">
+            <div class="tag tag-muted">Exaggeration 1.00 · seed 11</div>
+            <audio preload="none" controls src="../samples/engines/level-matched/chatterbox_exag100_s11.mp3"></audio>
+          </article>
+
+          <article class="seed">
+            <div class="tag tag-muted">Exaggeration 1.00 · seed 22</div>
+            <audio preload="none" controls src="../samples/engines/level-matched/chatterbox_exag100_s22.mp3"></audio>
+          </article>
+
+          <article class="seed">
+            <div class="tag tag-muted">Exaggeration 1.00 · seed 33</div>
+            <audio preload="none" controls src="../samples/engines/level-matched/chatterbox_exag100_s33.mp3"></audio>
+          </article></div>
+
+  <footer>
+    Generated locally by <code>scripts/build_comparison.py</code>. Works offline; no network,
+    fonts or scripts are loaded from anywhere. Current engine: Qwen3-TTS 12&#8239;Hz 0.6B Base,
+    8-bit MLX. Candidate: Chatterbox multilingual v3, MLX.
+  </footer>
+</div>
+<script>
+  // One clip at a time, so a comparison is never muddled by two playing at once.
+  const all = Array.from(document.querySelectorAll('audio'));
+  all.forEach(a => a.addEventListener('play', () => {
+    all.forEach(o => { if (o !== a) { o.pause(); } });
+  }));
+
+  let chain = null;
+  function stopChain() {
+    if (chain) { clearTimeout(chain.timer); chain.audio.removeEventListener('ended', chain.next); }
+    chain = null;
+    document.querySelectorAll('button.on').forEach(b => b.classList.remove('on'));
+  }
+
+  document.querySelectorAll('.pair').forEach(pair => {
+    const [a, b] = pair.querySelectorAll('audio');
+    pair.querySelectorAll('button[data-play]').forEach(button => {
+      button.addEventListener('click', () => {
+        const mode = button.dataset.play;
+        all.forEach(o => { o.pause(); });
+        stopChain();
+        if (mode === 'stop') return;
+        button.classList.add('on');
+        if (mode === 'A' || mode === 'B') {
+          const clip = mode === 'A' ? a : b;
+          clip.currentTime = 0;
+          clip.play();
+          return;
+        }
+        a.currentTime = 0; b.currentTime = 0;
+        const next = () => { b.currentTime = 0; b.play(); };
+        chain = { audio: a, next, timer: null };
+        a.addEventListener('ended', next, { once: true });
+        a.play();
+      });
+    });
+  });
+
+  // Remember verdicts between visits, so a second listening session can continue.
+  document.querySelectorAll('.verdict input').forEach(input => {
+    try {
+      if (localStorage.getItem(input.name) === input.value) input.checked = true;
+    } catch (e) {}
+    input.addEventListener('change', () => {
+      try { localStorage.setItem(input.name, input.value); } catch (e) {}
+    });
+  });
+</script>
+</body>
+</html>

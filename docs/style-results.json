@@ -1,0 +1,89 @@
+{
+  "script_words": 61,
+  "voice": "Demo · LJ Speech (public domain)",
+  "styles": {
+    "Natural": {
+      "seconds": 22.33,
+      "words_per_sec": 2.73,
+      "silences_over_200ms": 8,
+      "longest_silence": 1.18,
+      "f0_median_hz": 216.2,
+      "f0_spread_semitones": 4.78,
+      "settings": {
+        "reference_tempo": 1.0,
+        "speed": 1.0,
+        "pause": 0.3,
+        "sentence_pause": 0.1
+      },
+      "sections": 2,
+      "generation_seconds": 19.2,
+      "wall_seconds": 27.8,
+      "peak_memory_gb": 3.835,
+      "session_id": "4ed2511c9bc54d6fa3e097f6176ce0a9",
+      "output": "local_data/sessions/4ed2511c9bc54d6fa3e097f6176ce0a9/narration-0a08002a.wav",
+      "transcription": "Most people never notice this, but the human eye blinks far less when you stare at a screen. That single habit is why your eyes feel dry at the end of a long day. There is a simple fix. Every 20 minutes. Look at something 20 feet away for 20 seconds. Your eyes reset and the strain fades before it builds.",
+      "words_recovered": 0.98
+    },
+    "Energetic Explainer": {
+      "seconds": 17.65,
+      "words_per_sec": 3.46,
+      "silences_over_200ms": 5,
+      "longest_silence": 0.48,
+      "f0_median_hz": 186.0,
+      "f0_spread_semitones": 4.96,
+      "settings": {
+        "reference_tempo": 1.15,
+        "speed": 1.04,
+        "pause": 0.18,
+        "sentence_pause": 0.06
+      },
+      "sections": 2,
+      "generation_seconds": 16.4,
+      "wall_seconds": 22.3,
+      "peak_memory_gb": 3.834,
+      "session_id": "0d665924be0f407dba0bae08bce50e67",
+      "output": "local_data/sessions/0d665924be0f407dba0bae08bce50e67/narration-9c44a29b.wav",
+      "transcription": "Most people never notice this, but the human eye blinks far less when you stare at a screen. That single habit is why your eyes feel dry at the end of a long day. There is a simple fix. Every 20 minutes, look at something 20 feet away for 20 seconds. Your eyes reset, and the strain fades before it builds.",
+      "words_recovered": 0.98
+    },
+    "Documentary": {
+      "seconds": 23.92,
+      "words_per_sec": 2.55,
+      "silences_over_200ms": 8,
+      "longest_silence": 1.43,
+      "f0_median_hz": 216.2,
+      "f0_spread_semitones": 4.87,
+      "settings": {
+        "reference_tempo": 1.0,
+        "speed": 0.94,
+        "pause": 0.5,
+        "sentence_pause": 0.16
+      },
+      "sections": 2,
+      "generation_seconds": 19.8,
+      "wall_seconds": 25.7,
+      "peak_memory_gb": 3.835,
+      "session_id": "ed2afab3ff81491cbbd3cbf9ee1b6379",
+      "output": "local_data/sessions/ed2afab3ff81491cbbd3cbf9ee1b6379/narration-da8d8f50.wav",
+      "transcription": "Most people never notice this, but the human eye blinks far less when you stare at a screen. That single habit is why your eyes feel dry at the end of a long day. There is a simple fix. Every 20 minutes. Look at something 20 feet away for 20 seconds. Your eyes reset and the strain fades before it builds.",
+      "words_recovered": 0.98
+    }
+  },
+  "energetic_vs_natural": {
+    "words_per_sec_gain_pct": 26.7,
+    "seconds_saved": 4.68,
+    "longest_silence_delta": -0.7
+  },
+  "exports": {
+    "wav": {
+      "file": "samples/style-energetic-demo.wav",
+      "seconds": 17.65,
+      "bytes": 1271028
+    },
+    "mp3": {
+      "file": "samples/style-energetic-demo.mp3",
+      "seconds": null,
+      "bytes": 708524
+    }
+  }
+}

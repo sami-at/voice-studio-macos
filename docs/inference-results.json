@@ -1,0 +1,41 @@
+{
+  "session_id": "d32ccf6708cc4d3db6a07214bdd768eb",
+  "profile_id": "125cba1e2f1b4552a541529f380aac7a",
+  "script": "Welcome to Voice Studio. This narration was created locally on this Mac. A familiar voice can make even a simple message feel personal. Take a moment to listen to the rhythm, the pauses, and the way each sentence ends.\n\nEvery story starts with an idea. The first draft does not need to be perfect. Read the words aloud, leave space for the listener, and choose a pace that feels comfortable. Clear language gives a good story room to breathe.\n\nWhen the recording is ready, you can review each section and make a fresh take where it is needed. Save the finished narration, share your story, and keep creating. Your next idea is waiting.",
+  "seconds": 42.53,
+  "segments": [
+    {
+      "id": "2f93bab219674c9496cbf1b1674a698c",
+      "text": "Welcome to Voice Studio. This narration was created locally on this Mac. A familiar voice can make even a simple message feel personal. Take a moment to listen to the rhythm, the pauses, and the way each sentence ends.",
+      "paragraph_end": true,
+      "file": "sessions/d32ccf6708cc4d3db6a07214bdd768eb/0001-5a201cfb.wav",
+      "seed": 42,
+      "seconds": 14.16,
+      "generation_seconds": 13.54
+    },
+    {
+      "id": "ff658740794e4ff79d0be88bca4fe51b",
+      "text": "Every story starts with an idea. The first draft does not need to be perfect. Read the words aloud, leave space for the listener, and choose a pace that feels comfortable. Clear language gives a good story room to breathe.",
+      "paragraph_end": true,
+      "file": "sessions/d32ccf6708cc4d3db6a07214bdd768eb/0002-c4c3e7d2.wav",
+      "seed": 44,
+      "seconds": 14.91,
+      "generation_seconds": 17.06
+    },
+    {
+      "id": "444e58276e4a4b07be682e47d7be813b",
+      "text": "When the recording is ready, you can review each section and make a fresh take where it is needed. Save the finished narration, share your story, and keep creating. Your next idea is waiting.",
+      "paragraph_end": true,
+      "file": "sessions/d32ccf6708cc4d3db6a07214bdd768eb/0003-19c8b0f2.wav",
+      "seed": 44,
+      "seconds": 12.86,
+      "generation_seconds": 17.64
+    }
+  ],
+  "individual_regeneration": true,
+  "initial_generation_seconds": 47.54,
+  "peak_memory_gb": 3.835,
+  "reference_transcription": "Many animals of even complex structure which live parasitically within others are wholly devoid of an elementary cavity.",
+  "generated_transcription": "Welcome to Voice Studio. This narration was created locally on this Mac. A familiar voice can make even a simple message feel personal. Take a moment to listen to the rhythm, the pauses, and the way each sentence ends. Every story starts with an idea. The first draft does not need to be perfect. Read the words aloud, leap space for the listener, and choose a pace that feels comfortable. Clear language gives a good story room to breathe. When the recording is ready, you can review each section and make a fresh take where it is needed. Save the finished narration, share your story, and keep creating. Your next idea is waiting.",
+  "wall_seconds": 87.91
+}

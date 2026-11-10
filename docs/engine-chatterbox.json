@@ -1,0 +1,45 @@
+{
+  "engine": "chatterbox",
+  "load_seconds": 3.8,
+  "peak_memory_gb": 4.512,
+  "total_audio_seconds": 20.76,
+  "total_generation_seconds": 187.9,
+  "overall_realtime_factor": 9.05,
+  "lines": [
+    {
+      "tag": "1-question",
+      "seconds": 3.4,
+      "gen_seconds": 12.4,
+      "realtime_factor": 3.7,
+      "file": "<project>/samples/engines/chatterbox_1-question.wav"
+    },
+    {
+      "tag": "2-surprise",
+      "seconds": 4.36,
+      "gen_seconds": 37.7,
+      "realtime_factor": 8.6,
+      "file": "<project>/samples/engines/chatterbox_2-surprise.wav"
+    },
+    {
+      "tag": "3-explain",
+      "seconds": 3.84,
+      "gen_seconds": 48.2,
+      "realtime_factor": 12.5,
+      "file": "<project>/samples/engines/chatterbox_3-explain.wav"
+    },
+    {
+      "tag": "4-emphasis",
+      "seconds": 4.64,
+      "gen_seconds": 38.9,
+      "realtime_factor": 8.4,
+      "file": "<project>/samples/engines/chatterbox_4-emphasis.wav"
+    },
+    {
+      "tag": "5-conclusion",
+      "seconds": 4.52,
+      "gen_seconds": 50.7,
+      "realtime_factor": 11.2,
+      "file": "<project>/samples/engines/chatterbox_5-conclusion.wav"
+    }
+  ]
+}

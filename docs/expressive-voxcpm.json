@@ -1,0 +1,300 @@
+{
+  "model": "mlx-community/VoxCPM2-8bit",
+  "sentence": "Have you ever wondered why flies rub their hands together?",
+  "load_seconds": 18.8,
+  "model_memory_gb": 3.22,
+  "instructions": {
+    "neutral": {
+      "instruct": null,
+      "takes": [
+        {
+          "seconds": 2.72,
+          "words_per_sec": 3.68,
+          "f0_median": 176.8,
+          "f0_spread": 3.76,
+          "dynamics_db": 11.34,
+          "sample_rate": 48000,
+          "seed": 11,
+          "generation_seconds": 183.4,
+          "realtime_factor": 67.4,
+          "identity_hal": 0.9426,
+          "identity_mike": 0.805,
+          "complete": true,
+          "coverage": 1.0
+        },
+        {
+          "seconds": 2.72,
+          "words_per_sec": 3.68,
+          "f0_median": 138.3,
+          "f0_spread": 5.76,
+          "dynamics_db": 12.26,
+          "sample_rate": 48000,
+          "seed": 22,
+          "generation_seconds": 41.7,
+          "realtime_factor": 15.3,
+          "identity_hal": 0.9329,
+          "identity_mike": 0.8812,
+          "complete": true,
+          "coverage": 1.0
+        },
+        {
+          "seconds": 3.36,
+          "words_per_sec": 2.98,
+          "f0_median": 212.4,
+          "f0_spread": 4.54,
+          "dynamics_db": 12.33,
+          "sample_rate": 48000,
+          "seed": 33,
+          "generation_seconds": 422.0,
+          "realtime_factor": 125.6,
+          "identity_hal": 0.9388,
+          "identity_mike": 0.8236,
+          "complete": true,
+          "coverage": 1.0
+        }
+      ],
+      "f0_spread_mean": 4.69,
+      "dynamics_mean": 11.98,
+      "words_per_sec_mean": 3.45,
+      "f0_median_mean": 175.83,
+      "identity_hal_mean": 0.94,
+      "all_complete": true
+    },
+    "curious": {
+      "instruct": "curious and engaged, asking a genuine question",
+      "takes": [
+        {
+          "seconds": 2.88,
+          "words_per_sec": 3.47,
+          "f0_median": 177.8,
+          "f0_spread": 3.97,
+          "dynamics_db": 11.35,
+          "sample_rate": 48000,
+          "seed": 11,
+          "generation_seconds": 53.3,
+          "realtime_factor": 18.5,
+          "identity_hal": 0.9311,
+          "identity_mike": 0.785,
+          "complete": true,
+          "coverage": 1.0
+        },
+        {
+          "seconds": 2.88,
+          "words_per_sec": 3.47,
+          "f0_median": 123.1,
+          "f0_spread": 5.56,
+          "dynamics_db": 11.15,
+          "sample_rate": 48000,
+          "seed": 22,
+          "generation_seconds": 35.5,
+          "realtime_factor": 12.3,
+          "identity_hal": 0.9278,
+          "identity_mike": 0.8641,
+          "complete": true,
+          "coverage": 1.0
+        },
+        {
+          "seconds": 3.2,
+          "words_per_sec": 3.12,
+          "f0_median": 214.3,
+          "f0_spread": 3.53,
+          "dynamics_db": 11.4,
+          "sample_rate": 48000,
+          "seed": 33,
+          "generation_seconds": 42.5,
+          "realtime_factor": 13.3,
+          "identity_hal": 0.9252,
+          "identity_mike": 0.85,
+          "complete": true,
+          "coverage": 1.0
+        }
+      ],
+      "f0_spread_mean": 4.35,
+      "dynamics_mean": 11.3,
+      "words_per_sec_mean": 3.35,
+      "f0_median_mean": 171.73,
+      "identity_hal_mean": 0.93,
+      "all_complete": true
+    },
+    "surprised": {
+      "instruct": "pleasantly surprised, as if revealing something unexpected",
+      "takes": [
+        {
+          "seconds": 2.88,
+          "words_per_sec": 3.47,
+          "f0_median": 218.2,
+          "f0_spread": 4.04,
+          "dynamics_db": 11.4,
+          "sample_rate": 48000,
+          "seed": 11,
+          "generation_seconds": 93.2,
+          "realtime_factor": 32.4,
+          "identity_hal": 0.9331,
+          "identity_mike": 0.754,
+          "complete": true,
+          "coverage": 1.0
+        },
+        {
+          "seconds": 3.36,
+          "words_per_sec": 2.98,
+          "f0_median": 143.3,
+          "f0_spread": 4.25,
+          "dynamics_db": 10.44,
+          "sample_rate": 48000,
+          "seed": 22,
+          "generation_seconds": 95.3,
+          "realtime_factor": 28.4,
+          "identity_hal": 0.9291,
+          "identity_mike": 0.7569,
+          "complete": true,
+          "coverage": 1.0
+        },
+        {
+          "seconds": 3.36,
+          "words_per_sec": 2.98,
+          "f0_median": 149.5,
+          "f0_spread": 4.81,
+          "dynamics_db": 10.03,
+          "sample_rate": 48000,
+          "seed": 33,
+          "generation_seconds": 88.9,
+          "realtime_factor": 26.5,
+          "identity_hal": 0.9551,
+          "identity_mike": 0.8386,
+          "complete": true,
+          "coverage": 1.0
+        }
+      ],
+      "f0_spread_mean": 4.37,
+      "dynamics_mean": 10.62,
+      "words_per_sec_mean": 3.14,
+      "f0_median_mean": 170.33,
+      "identity_hal_mean": 0.94,
+      "all_complete": true
+    },
+    "confident": {
+      "instruct": "calm and confident, explaining something you know well",
+      "takes": [
+        {
+          "seconds": 2.88,
+          "words_per_sec": 3.47,
+          "f0_median": 127.7,
+          "f0_spread": 6.37,
+          "dynamics_db": 13.17,
+          "sample_rate": 48000,
+          "seed": 11,
+          "generation_seconds": 38.2,
+          "realtime_factor": 13.3,
+          "identity_hal": 0.9369,
+          "identity_mike": 0.8128,
+          "complete": true,
+          "coverage": 1.0
+        },
+        {
+          "seconds": 2.88,
+          "words_per_sec": 3.47,
+          "f0_median": 138.5,
+          "f0_spread": 5.57,
+          "dynamics_db": 11.74,
+          "sample_rate": 48000,
+          "seed": 22,
+          "generation_seconds": 53.8,
+          "realtime_factor": 18.7,
+          "identity_hal": 0.9322,
+          "identity_mike": 0.8711,
+          "complete": true,
+          "coverage": 1.0
+        },
+        {
+          "seconds": 3.2,
+          "words_per_sec": 3.12,
+          "f0_median": 214.3,
+          "f0_spread": 3.58,
+          "dynamics_db": 11.02,
+          "sample_rate": 48000,
+          "seed": 33,
+          "generation_seconds": 48.0,
+          "realtime_factor": 15.0,
+          "identity_hal": 0.9245,
+          "identity_mike": 0.8589,
+          "complete": true,
+          "coverage": 1.0
+        }
+      ],
+      "f0_spread_mean": 5.17,
+      "dynamics_mean": 11.98,
+      "words_per_sec_mean": 3.35,
+      "f0_median_mean": 160.17,
+      "identity_hal_mean": 0.93,
+      "all_complete": true
+    },
+    "playful": {
+      "instruct": "light and playful, with a hint of humour",
+      "takes": [
+        {
+          "seconds": 2.88,
+          "words_per_sec": 3.47,
+          "f0_median": 229.7,
+          "f0_spread": 3.99,
+          "dynamics_db": 11.52,
+          "sample_rate": 48000,
+          "seed": 11,
+          "generation_seconds": 26.7,
+          "realtime_factor": 9.3,
+          "identity_hal": 0.9136,
+          "identity_mike": 0.7489,
+          "complete": true,
+          "coverage": 1.0
+        },
+        {
+          "seconds": 3.2,
+          "words_per_sec": 3.12,
+          "f0_median": 158.9,
+          "f0_spread": 4.17,
+          "dynamics_db": 10.34,
+          "sample_rate": 48000,
+          "seed": 22,
+          "generation_seconds": 42.4,
+          "realtime_factor": 13.2,
+          "identity_hal": 0.9154,
+          "identity_mike": 0.8401,
+          "complete": true,
+          "coverage": 1.0
+        },
+        {
+          "seconds": 3.2,
+          "words_per_sec": 3.12,
+          "f0_median": 214.3,
+          "f0_spread": 3.63,
+          "dynamics_db": 11.39,
+          "sample_rate": 48000,
+          "seed": 33,
+          "generation_seconds": 74.0,
+          "realtime_factor": 23.1,
+          "identity_hal": 0.9271,
+          "identity_mike": 0.8544,
+          "complete": true,
+          "coverage": 1.0
+        }
+      ],
+      "f0_spread_mean": 3.93,
+      "dynamics_mean": 11.08,
+      "words_per_sec_mean": 3.24,
+      "f0_median_mean": 200.97,
+      "identity_hal_mean": 0.92,
+      "all_complete": true
+    }
+  },
+  "peak_memory_gb": 5.596,
+  "separates_from_neutral": {
+    "curious": false,
+    "surprised": false,
+    "confident": false,
+    "playful": false
+  },
+  "any_instruction_separates": false,
+  "identity_hal_range": [
+    0.9136,
+    0.9551
+  ]
+}

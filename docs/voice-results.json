@@ -1,0 +1,61 @@
+{
+  "script": "Here is something most people get wrong. The brain does not store a memory in one place. It rebuilds it every single time you remember it.",
+  "voices": {
+    "Mike": {
+      "style": "Energetic Explainer",
+      "reference": "voices/9b4dfa46251849558cbc7dd6fea32283/baa485815ba04490926bf7d66253afc6/reference.wav",
+      "reference_seconds": 12.34,
+      "transcript": "Surprisingly, this happens because your brain sometimes treats walking through a doorway as the beginning of a new event. That change can interrupt your short-term memory, making you forget what you were thinking about just seconds earlier.",
+      "session_id": "5dcd50eb36d7436f9b65ba51e40f7d76",
+      "output": "local_data/sessions/5dcd50eb36d7436f9b65ba51e40f7d76/narration-8dd2a9e7.wav",
+      "seconds": 5.96,
+      "generation_seconds": 12.7,
+      "peak_memory_gb": 3.843,
+      "wall_seconds": 28.1,
+      "transcription": "Here's something most people get wrong. The brain does not store a memory in one place. It rebuilds it every single time you remember it.",
+      "profile_unchanged_by_generation": true,
+      "f0_median_hz": 133.3,
+      "f0_spread_semitones": 5.74
+    },
+    "Hal": {
+      "style": "Energetic Explainer",
+      "reference": "voices/a482b4beff9049f995f2d959e89d922d/117ff54cf5fa449d9721133610d7ec7e/reference.wav",
+      "reference_seconds": 13.06,
+      "transcript": "Surprisingly, this happens because your brain sometimes treats walking through a doorway as the beginning of a new event. That change can interrupt your short-term memory, making you forget what you were thinking about just seconds earlier.",
+      "session_id": "cc378efa1de84515946a7c65dea1fae1",
+      "output": "local_data/sessions/cc378efa1de84515946a7c65dea1fae1/narration-741faf32.wav",
+      "seconds": 6.69,
+      "generation_seconds": 17.8,
+      "peak_memory_gb": 3.843,
+      "wall_seconds": 28.1,
+      "transcription": "Here's something most people get wrong. The brain does not store a memory in one place. It rebuilds it every single time you remember it.",
+      "profile_unchanged_by_generation": true,
+      "f0_median_hz": 164.4,
+      "f0_spread_semitones": 5.62
+    }
+  },
+  "reference_matching": {
+    "Mike": {
+      "similarity_to_each_reference": {
+        "Mike": 0.9867,
+        "Hal": 0.8242
+      },
+      "closest_reference": "Mike",
+      "matched_own_reference": true
+    },
+    "Hal": {
+      "similarity_to_each_reference": {
+        "Mike": 0.9317,
+        "Hal": 0.9388
+      },
+      "closest_reference": "Hal",
+      "matched_own_reference": true
+    }
+  },
+  "distinguishable": {
+    "generated_similarity": 0.9271,
+    "reference_similarity": 0.8408,
+    "f0_median_difference_hz": 31.1,
+    "all_matched_own_reference": true
+  }
+}
